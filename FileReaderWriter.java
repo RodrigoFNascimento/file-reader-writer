@@ -53,9 +53,9 @@ public class FileReaderWriter {
     public static void main(String[] args) {
         
         try {
-            // Checks if any file was passed
-            if (args.length  == 0) {
-                throw new RuntimeException("You forgot the file");
+            // Checks if at least two arguments were passed
+            if (args.length  < 2) {
+                throw new RuntimeException("You forgot one or more files");
             }
 
             // Reads content
